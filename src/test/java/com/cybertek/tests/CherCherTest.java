@@ -9,10 +9,10 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 public class CherCherTest {
-
+    WebDriver driver; // declare our reference for the object
     @BeforeMethod
     public void setUp(){
-        WebDriver driver; // declare our reference for the object
+
 
         driver = WebDriverFactory.getDriver("chrome"); // create the object
             driver.manage().window().maximize();
